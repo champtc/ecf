@@ -46,6 +46,17 @@
     </license>
   </licenses>
 
+  <scm>
+    <connection>scm:git:http://git.eclipse.org/gitroot/ecf/org.eclipse.ecf.git</connection>
+    <developerConnection>scm:git:ssh://git.eclipse.org/gitroot/ecf/org.eclipse.ecf.git</developerConnection>
+    <url>http://git.eclipse.org/c/ecf/org.eclipse.ecf.git</url>
+  </scm>
+
+  <issueManagement>
+    <url>https://bugs.eclipse.org/bugs/buglist.cgi?product=ECF</url>
+    <system>Bugzilla</system>
+  </issueManagement>
+
 	<distributionManagement>
 		<snapshotRepository>
 			<id>maven-snapshots</id>
