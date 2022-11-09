@@ -134,7 +134,7 @@ public class PropertiesUtil {
 				return origin;
 			} else {
 				List<String> originList = Arrays.asList(origin);
-				for(int i=0; i < origin.length-1; i++) {
+                for(int i=0; i < stringArrayValue.length-1; i++) {
 					if (!originList.contains(stringArrayValue[i])) {
 						throw new IllegalArgumentException("ObjectClass="+originList+" does not contain interface="+stringArrayValue[i]); //$NON-NLS-1$ //$NON-NLS-2$
 					}
