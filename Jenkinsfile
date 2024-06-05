@@ -43,7 +43,7 @@ node {
             
         stage('Setup Build') {
 
-            env.JAVA_HOME = tool 'OPEN_JDK_11'
+            env.JAVA_HOME = tool 'OPEN_JDK_17'
             workingFolder = pwd()
 
             properties([[$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', artifactDaysToKeepStr: '90', artifactNumToKeepStr: '2', daysToKeepStr: '', numToKeepStr: '']]])
