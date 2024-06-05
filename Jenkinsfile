@@ -49,7 +49,7 @@ node {
             properties([[$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', artifactDaysToKeepStr: '90', artifactNumToKeepStr: '2', daysToKeepStr: '', numToKeepStr: '']]])
         }
         
-        configFileProvider([configFile(fileId: 'P2_MAVEN_SETTING', variable: 'MAVEN_SETTINGS_XML')]) {
+        configFileProvider([configFile(fileId: 'P2_MAVEN_SETTINGS', variable: 'MAVEN_SETTINGS_XML')]) {
             stage('Build') {
                 sh '$M2_HOME/bin/mvn -s $MAVEN_SETTINGS_XML clean package deploy -f ./pom.xml -Dtycho.localArtifacts=ignore -Dmaven.test.skip=true -Dtarget-platform=2022-03'
             }
