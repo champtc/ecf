@@ -254,7 +254,7 @@
     <module>releng/features/org.eclipse.ecf.xmpp.feature</module>
 
     <module>releng/org.eclipse.ecf.releng.target</module>
-    <module>releng/org.eclipse.ecf.releng.repository</module>
+    <!-- <module>releng/org.eclipse.ecf.releng.repository</module> -->
   </modules>
 
   <build>
